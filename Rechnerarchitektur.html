@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rechnerarchitektur</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
+<li><a href="#einführung">Einführung</a>
+<ul>
+<li><a href="#rechnerarchitektur-begriffsbildung">Rechnerarchitektur, Begriffsbildung</a></li>
+<li><a href="#teilgebiete-der-informatik-einordnung-der-rechnerarchitektur">Teilgebiete der Informatik: Einordnung der Rechnerarchitektur</a></li>
+<li><a href="#historische-entwicklung-von-rechnerarchitekturen">Historische Entwicklung von Rechnerarchitekturen</a></li>
+<li><a href="#klassifikation-von-rechnerarchitekturen">Klassifikation von Rechnerarchitekturen</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <h1 id="einführung">Einführung</h1>
+<h2 id="rechnerarchitektur-begriffsbildung">Rechnerarchitektur, Begriffsbildung</h2>
+<p>Die Rechnerarchitektur wird durch die Aufbaustruktur der Hardware und das Operationsprinzip bestimmt. Hierbei legt das funktionelle Verhalten bei der Darstellung, der Speicherung und bei der Transformation von Informationen fest. Dies umfasst die Festlegung der Bedeutung von Kontrollstrukturen zur Programmausführung in der Hardware. Ein und dasselbe Operationsprinzip kann in verschiedenen Hardware-Strukturen realisiert werden. Beim Entwurf einer Rechnerarchitektur sollen u. a. folgende Anforderungen möglichst gut erfüllt werden:</p>
+<ul>
+<li>Leistung</li>
+<li>Ausfalltoleranz</li>
+<li>Erweiterbarkeit</li>
+<li>Benutzerfreundlichkeit</li>
+</ul>
+<p>Man unterscheidet grudnsätzlcih zwischen Universalrechnern und Spezialrechnern. Währen bei der Konstruktion von Spezialrechnern bestimmte Ziele, z.B. die Leistung, besonders wichtig sind, werden Universalrechner so konstruiert, dass die oben genannten Anforderungen möglichst alle erfüllt sind und die Kosten minimiert werden.</p>
+<p>Die Leistung ist sicher ein wichtiges Ziel bei einer Rechnerarchitektur. Hierbei kann eine Forderung nach einer absoluten Leistung für Echtzeit-Aufgaben oder nach einer mittleren Leistung im Mehrbenutzerbetrieb eines Servers gestellt werden.</p>
+<p>Bei Super-Computern, die zur Lösung rechenintensiven Simulationsaufgaben eingesetzt werden, kannd ie Beachtung der Kosteneffektivität, d.h. die Leistung in Bezug auf die Kosten, oft in den Hintergrund gestellt werden. Eine Rechnerarchitektur sollte so konzipiert sein, dass sowohl die Rechenleistung erhöht, als auch neue Funktionen in einem Rechner integriert werden können (z.B. Steckkarten in PCs). Diese Forderung nach Erweiterbarkeit nennt man auch Skalierbarkeit (scalability).</p>
+<p>Bei Anfallstoleranz ist das Ziel, die Betriebsfähigkeit eines Rechners bei Aufall einzelner Komponent möglichst zu erhalten. Dabei kann die Leistung reduziert werden. Jedoch sollten die Rechenergebnisse bei Ausfall erhalten bleiben und besser noch auf einem nicht flüchtigen Speicher gerettet werden.</p>
+<p>Unter Ergonomie und Benutzerfreundlichkeit wird vor allem die Gestaltung der Benutzerschnittstellen durch Peripheriegeräte, z.B. Monitore, Tastaturen, Mäuse und auch Sprach-Ein- und Ausgabe-Systeme. Natürlich lassen sich mehrere Ziele gleichzeitig verfolgen, da sie voneinander stark entkoppelt sind. In welchem Maß einzelne Ziele verfolgt werden, wird durch eine entsprechende Kosten-Nutzen-Analyse bestimmt.</p>
+<p>Die Komponenten einer Rechnerarchitektur sind Hardware-Betriebsmittel, wie Prozessoren, Speicher und Kommunikationshardware (Busse). Wie in der Bauarchitektur gibt es auch in der Rechnerarchitektur Kommunikationsprinzipien, nach denen die Hardware-Betriebsmittel zu einer Rechnerarchitektur zusammengefügt werden.</p>
+<h2 id="teilgebiete-der-informatik-einordnung-der-rechnerarchitektur">Teilgebiete der Informatik: Einordnung der Rechnerarchitektur</h2>
+<p>Informatik (computer science) ist die Wissenschaft von der automatisierten Informationsverarbeitung. Die praktischen und theoretischen Aufgabengebiete lassen sich wie folgt beschreiben:</p>
+<ul>
+<li>Organisatorische, algorithmische und programmtechnische Realisierung von informationsverarbeitenden Prozessen</li>
+<li>Entwurf, (Realisierung), Inbetriebnahme und effektiverer Betrieb von Systemen zur Informationsverarbeitung</li>
+</ul>
+<p>Der Entwurf von Rechenrn kann hierbei eindeutig der Rechnerarchitektur zugeordnet werden. Die Informatik hat zwei Hauptgebiete, die Allgemeine Informatik (auch Kerninformatik) und die Angewandte Informatik. Die zwei Hauptgebiete unterteilen sich jeweils in weitere Teilgebiete und diese wiederum in Themenbereiche</p>
+<p>In diesem Umfeld gehört die Rechnerarchitektur zu den Grundlagenfächern der Technischen Informatik. Dabei nutzt die Rechnerarchitektur die Erkenntnisse und die entwickelten Komponenten (Hardware-Betriebsmittel) aus der Schaltungstechnik. Desweiteren ist für den Betrieb eines Rechners ein sogenanntes Betriebssystem erforderlich, welches an die Rechnerarchitektur angepasst ist. Architekturdetails für die den Benutzer unwichtig sind, bleiben dabei für den Benutzer transparent.</p>
+
+<table>
+<thead>
+<tr>
+<th>Hauptgebiet</th>
+<th>Teilgebiet</th>
+<th>Themenbereiche</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Allgemeine Informatik</td>
+<td>Theoretische Informatik</td>
+<td>Theorie der Berechenbarkeit, Theorie der formalen Sprachen, Automatentheorie</td>
+</tr>
+<tr>
+<td></td>
+<td>Praktische Informatik</td>
+<td>Betriebssysteme, Compilerbau, Graphische Datenverarbeitung, Softwaretechnik</td>
+</tr>
+<tr>
+<td></td>
+<td>Technische Informatik</td>
+<td>Rechnerarchitektur, Prozessdatumverarbeitung, Schaltungstechnik</td>
+</tr>
+<tr>
+<td>Angewandte Informatik</td>
+<td>Wirtschaftsinformatik</td>
+<td>Informations- und Planungssysteme</td>
+</tr>
+<tr>
+<td></td>
+<td>Medizin-Informatik</td>
+<td>Dokumentation und Diagnose</td>
+</tr>
+<tr>
+<td></td>
+<td>Verwaltungs-Informatik</td>
+<td>Öffentliche Verwaltung</td>
+</tr>
+<tr>
+<td></td>
+<td>Produktions-Informatik</td>
+<td>Arbeitsplanung und Arbeitssteuerung, Qualitätssicherung</td>
+</tr>
+<tr>
+<td></td>
+<td>Linguistische Informatik</td>
+<td>Verarbeitung natürlicher Sprachen</td>
+</tr>
+<tr>
+<td></td>
+<td>Unterrichts-Informatik</td>
+<td>individuelles Lernen, Lernplattformen</td>
+</tr>
+<tr>
+<td></td>
+<td>Kultur-Informatik</td>
+<td>Unterhaltung, Kunst</td>
+</tr>
+<tr>
+<td></td>
+<td>Gesellschafts-Informatik</td>
+<td>Datenschutz, Computerkriminalität</td>
+</tr>
+</tbody>
+</table><h2 id="historische-entwicklung-von-rechnerarchitekturen">Historische Entwicklung von Rechnerarchitekturen</h2>
+<p>Nachfolgende Übersicht zeigt wie weit die Grundlagen auf deren heutige Rechner basieren zurückreichen und wie rasant die Entwicklung seit der Erfindung des ersten freiprogrammierbaren Rechners durch Konrad Zuse bis heute verlief.</p>
+
+<table>
+<thead>
+<tr>
+<th>Ursprünge</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ca. 5000 v. Chr.</td>
+<td>Zahlensysteme zum systematischen Rechnen</td>
+</tr>
+<tr>
+<td>(500-300) v. Chr.</td>
+<td>Entwicklung der Logik (Platon, Aristoteles)</td>
+</tr>
+<tr>
+<td>um 0</td>
+<td>Nutzung erster Automaten (z.B. Türöffner)</td>
+</tr>
+<tr>
+<td>110</td>
+<td>Dezimales Zahlensystem</td>
+</tr>
+<tr>
+<td>820</td>
+<td>Anfänge von Algebra und Algorithmik (Al Chwarizmi)</td>
+</tr>
+<tr>
+<td>1623</td>
+<td>Zahnradgetriebene Rechenmaschine (Schickard)</td>
+</tr>
+<tr>
+<td>1679</td>
+<td>Arbeit über das Rechnen mit Dualzahlen (Leibniz)</td>
+</tr>
+<tr>
+<td>1800</td>
+<td>Konzept einer digitalen programmgesteuerten Rechenmaschine (Babbage)</td>
+</tr>
+<tr>
+<td>1889</td>
+<td>Elektromagnetische Sortier- und Zählmaschine mit Lochkarten (Hollerith)</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Moderne Informatik</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1941</td>
+<td>programmierbaren Rechner mit elektromechanischen Komponenten (Relais) mit Binärsystem und Gleitpunktarithmetik (Zuse)</td>
+</tr>
+<tr>
+<td>um 1949</td>
+<td>Berechenbarkeitsüberlegung (Turing)</td>
+</tr>
+<tr>
+<td>1946 - 1954</td>
+<td>Rechner der 1. Generation, Relais und Röhren</td>
+</tr>
+<tr>
+<td>ab 1953</td>
+<td>höhere Programmiersprache FORTRAN</td>
+</tr>
+<tr>
+<td>1955 - 1962</td>
+<td>Rechner der 2. Generation (Transitoren)</td>
+</tr>
+<tr>
+<td>ab 1959</td>
+<td>Entwicklng erster Betriebssysteme, Stapelverarbeitung, höhere Programmiersprachen COBOL, LISP</td>
+</tr>
+<tr>
+<td>1962 - 1976</td>
+<td>Rechner der 3. Generation mit integrierten Schaltungen</td>
+</tr>
+<tr>
+<td>1967</td>
+<td>Small Scale INtegration (SSI) ab 50 Transistoren pro Chip</td>
+</tr>
+<tr>
+<td>1971</td>
+<td>Medium Scale Integration (MSI) 500 Transistoren pro Chip</td>
+</tr>
+<tr>
+<td>bis 1976</td>
+<td>Large Scale Integration (LSI) mehrere Tausend Transistoren pro Chip</td>
+</tr>
+<tr>
+<td>ab 1970</td>
+<td>Super-Computer-Architekturen (CDC-Star-100, ILLIAC IV, CRAY-1)</td>
+</tr>
+<tr>
+<td>1965 - 1975</td>
+<td>Multiuser/Multiprogramming Betriebssysteme</td>
+</tr>
+<tr>
+<td></td>
+<td>Datenbanken</td>
+</tr>
+<tr>
+<td></td>
+<td>Software-Engineering</td>
+</tr>
+<tr>
+<td></td>
+<td>Höhere Programmiersprache C (1968, Richie)</td>
+</tr>
+<tr>
+<td></td>
+<td>Pascal (1971, Wirth)</td>
+</tr>
+<tr>
+<td></td>
+<td>Prolog (1972, Colmenhauer)</td>
+</tr>
+<tr>
+<td>1976 - 1982</td>
+<td>Rechner der 4. Generation, Very Large Scale Integration (VLSI) Hundertausend Transistoren pro Chip</td>
+</tr>
+<tr>
+<td></td>
+<td>Rechnernetze und verteilte Informationsverarbeitung</td>
+</tr>
+<tr>
+<td></td>
+<td>Personalcomputer (1980)</td>
+</tr>
+<tr>
+<td></td>
+<td>RISC-Konzepte (1981)</td>
+</tr>
+<tr>
+<td>ab 1982 bis heute</td>
+<td>Rechner 5. Generation</td>
+</tr>
+<tr>
+<td></td>
+<td>Ultra Large Scale Integration (ULSI), mehrere hundert Millionen Transistoren pro Chip</td>
+</tr>
+<tr>
+<td></td>
+<td>Client/Server Anwendungen</td>
+</tr>
+<tr>
+<td></td>
+<td>PCs Tablets Smartphones</td>
+</tr>
+<tr>
+<td></td>
+<td>Internet für alle / Multimedia</td>
+</tr>
+</tbody>
+</table><h2 id="klassifikation-von-rechnerarchitekturen">Klassifikation von Rechnerarchitekturen</h2>
+<p>Nach FLYNN kann eine allgemeine Klassifikation von Rechnerarchitekturen bezogen auf die Befehlsströme und die Datenströme vorgenommen werdne. Diese Klassifikation unterscheidet Rechner mit einem oder mehreren (multiplen) Befehlsströmen oder einen oder mehreren (multiplen) Datenströmen.</p>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Ein Befehl zu einer Zeit bearbeiten</th>
+<th>Mehrer Befehle zu einer Zeit bearbeiten</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ein Datenwert zu einer Zeit bearbeiten</td>
+<td>Single Instruction Stream over Single Data Stream (SISD)</td>
+<td>Multiple Instruction Stream over Single Data Stream (MISD)</td>
+</tr>
+<tr>
+<td>Mehrere Datenwerte zu einer Zeit bearbeiten</td>
+<td>Single Instruction Stream over Multiple Data Stream (SIMD)</td>
+<td>Multiple Instruction Stream over Multiple Data Stream (MIMD)</td>
+</tr>
+</tbody>
+</table><ul>
+<li>
+<p>Die Klasse SISD-Rechner entspricht der klassischen Einprozessor von Neumann-Architekturen.</p>
+</li>
+<li>
+<p>Die Klasse MISD ist leer, da es kein Sinn macht mehrere Befehle auf einem Datenwert <strong>zu einer Zeit</strong> (gleichezeitig) auszuführen.</p>
+</li>
+<li>
+<p>Die Klasse SIMD umfasst die Feld- und Vektorrechner. Feldrechner bestehen aus einem Feld von regelmäßig miteinander verbunden Verarbeitungseinheiten, die unter Kontrolle durch eine zentrale Steuereinheit dieselbe MaschinenOperation auf verschiedenen Daten ausführen Feldrechner können sehr viele Verarbeitungseinheiten enthalten. Die einzelnen Verarbeitungseinheiten besitzen lokale Speicher und sind entweder vollständige Prozessoren, können aber auch nur einzelne Bit verarbeitende Schaltungen sein. Ein gesamtes über die Verarbeitungseinheiten verteiltes Datenfeld wird in eine der zulässigen Kommunikationsrichtungen verschoben. Die Verbindungsstruktur ist ein Gitter mit vier oder acht Verbindungen zu jeweils den nächsten Nachbarnoten. Die Kommunikationsrichtungen heißen em anch Nord, Süd, Ost und West bei vier Kommunikationsrichtungen und zusätzlich Nord-Ost, Süd-West, Süd-Ost, Nord-West bei acht Kommunikationsrichtungen. Die Anwendung von Feldrechnern erfolgt bei speziellen Problemen, z.B. bei Signal- und Bildverarbeitung, allgemein dann wenn die Daten in Matrixform vorliegen. Beispiel für Feldrechner sind der historische ILLIAC IV mit 64 Prozessoren, die heutigen Rechner Connection Machines Typ CM-1, CM-2, CM-200, der DAP (distributed array processor) der englsichen Firma ICL und die Rechner MP-1, MP-2 der Firma MasPar.</p>
+<p>Bei einem Vektorrechner hat das Rechnerwerk mehrere arithmetische Funktionseinheiten, die nach dem Fließbandprinzip (Pipelining) mehrere Gleitpunktzahlen bearbeiten. Dabei wird mit speziellen Maschinenbefehlen, dem sog. Vektorbefehlen i.d.R. ein Paar von Vektoren, d.h. z.B. 128 oder 256 Gleitpunktzahlen</p>
+<p>Das Grundprinzip des Pipelining ist, Operationen in Teiloperationen zu zerlegen, die dann gleichzeitig von mehreren Funktonseinheiten ausgeführt werden. Die Addition von zwei Gleitkommazahlen besteht aaus mehreren Schritten z.B.</p>
+<ol>
+<li>Zyklus - Gleitpunktzahlen in Register laden</li>
+<li>Zyklus - Exponenten der Zahlen vergleicehn und eine Mantisse so shiften, dass die Exponenten gleich werden</li>
+<li>Zyklus - Mantisse addieren</li>
+<li>Zyklus - Ergebnis normalisieren, d.h. Mantisse falls notwendig mit Änderung des Exponenten in die Form <a href="http://0.xxx">0.xxx</a> bringend</li>
+</ol>
+</li>
+</ul>
+
+    </div>
+  </div>
+</body>
+
+</html>
