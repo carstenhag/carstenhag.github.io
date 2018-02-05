@@ -288,6 +288,7 @@ w \mapsto 22 \mapsto 122</p>
 <p>Vorlesung 2</p>
 <h2 id="die-vigenère-chiffre">Die Vigenère-Chiffre</h2>
 <p>Die Shift- und die affine Chiffre sind Beispiele von monoalphabetischen Chiffren, d.h. mit der Wahl eines Schlüssels wird jedes Klartextzeichen auf genau ein Chiffretextzeichen abgebildet (Eigenschaft, dass die statistische Eigenschaft des Klartexts auf dem Chiffretext übertragen wird)</p>
+<p>Vigenère-Chiffre (1586) veröffentlicht, galt langge als nicht brechbar bis zu den 1860ern, Friedrich Kasiski, Charles Babbage</p>
 
     </div>
   </div>
